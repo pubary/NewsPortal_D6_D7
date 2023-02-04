@@ -1,0 +1,13 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_tags %}
+
+{% block title %}
+    {{title}}
+{% endblock title %}
+
+
+{% block content %}
+<div><h1>Информационный портал</h1></div>
+<h2>{% current_time '%d. %m.  %Y г.' %}</h2>
+{% endblock content %}
